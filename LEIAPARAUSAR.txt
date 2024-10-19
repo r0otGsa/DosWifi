@@ -1,0 +1,10 @@
+Comandos para iniciar a ferramenta:
+
+- chmod +x DoS.py
+
+- sudo python DoS.py
+
+
+
+
+
